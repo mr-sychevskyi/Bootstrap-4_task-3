@@ -1,0 +1,49 @@
+// FLIGHTS-INFO
+.section__content {	
+	
+	.flights-info__wrap { height: 100%; }
+
+	.flights-info__top {
+		justify-content: space-between;
+
+		margin-bottom: 50px;
+	}
+
+	.flights-info__body {
+		display: flex;
+		justify-content: space-between;
+			
+		&__route {
+			display: flex;
+			flex-direction: column;			
+			flex: 2;
+
+			.route__icons {
+				display: flex;
+				justify-content: space-between;
+			}
+ 
+			.route__timeline { margin-top: 10px; }
+
+			.route__airport {
+				display: flex;
+				justify-content: space-between;
+
+				font-weight: 700;	
+				color: $v-grey-dark;
+			}
+		}
+			
+		.city {
+			font-size: 1.1rem;
+			color: $v-grey-deep;
+		}
+			
+		.full-time {
+			font-size: .85rem;
+			font-weight: 700;
+			color: $v-grey-deep;
+		}
+	}
+}
+// END --> FLIGHTS-INFO

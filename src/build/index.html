@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"> 
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Vliegwel</title>
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+        <link href="dist/bootstrap.css" rel="stylesheet">
+        <link href="dist/main.css" rel="stylesheet">
+    </head>
+
+   
+    <body>
+    
+    	<div class="wrapper">
+    		
+			<header class="header">
+				<div class="container">
+					<div class="form-wrap">
+						<!-- Search-form -->
+					 	@@include('./partials/_search-form.html')		
+					</div>
+				</div>  
+			</header>   
+
+
+			<div class="main py-4 py-sm-5">
+				<div class="container">
+						
+						<!-- Flights-sort -->
+    					@@include('./partials/_flights-sort.html')
+    					
+    					
+    					<!-- Flights-section -->
+						<section class="flights-info">
+    					
+							<div class="section__content">
+								<div class="row">
+
+									<div class="col-md-5">
+										@@include('./partials/flights-section/flights-info__default/_variant-1(outbound).html')
+									</div>
+																			
+									<div class="col-md-5">
+										@@include('./partials/flights-section/flights-info__default/_variant-1(return).html')
+									</div>
+										
+									<div class="col-md-2">
+										@@include('./partials/_sidebar-expanded.html')
+									</div>
+										
+								</div>
+							</div>
+							
+							<div class="section__content__more">
+								<div class="row">
+
+									<div class="col-md-5">
+										@@include('./partials/flights-section/flights-info__more/_variant-1(outbound-more).html')
+									</div>
+									
+									<div class="col-md-5">
+										@@include('./partials/flights-section/flights-info__more/_variant-2(return-more-transfer-1).html')
+										@@include('./partials/flights-section/flights-info__more/_variant-2(return-more-transfer-2).html')
+										@@include('./partials/flights-section/flights-info__more/_variant-2(return-more).html')
+									</div>
+									
+									<div class="col-md-2">
+										@@include('./partials/_sidebar-more.html')
+									</div>
+									
+								</div>
+							</div>
+							
+						</section>
+   					
+    					
+    					
+    					<!-- Flights-section -->
+    					<section class="flights-info">
+    					
+							<div class="section__content">
+								<div class="row">
+
+									<div class="col-md-5">
+										@@include('./partials/flights-section/flights-info__default/_variant-2(outbound).html')
+									</div>
+																			
+									<div class="col-md-5">
+										@@include('./partials/flights-section/flights-info__default/_variant-2(return).html')
+									</div>
+										
+									<div class="col-md-2">
+										@@include('./partials/_sidebar.html')
+									</div>
+										
+								</div>
+							</div>
+							
+							<div class="section__content__more">
+								
+								<div class="row">
+
+									<div class="col-md-5">
+										@@include('./partials/flights-section/flights-info__more/_variant-2(outbound-more-transfer).html')
+										@@include('./partials/flights-section/flights-info__more/_variant-2(outbound-more).html')
+									</div>
+									
+									<div class="col-md-5">
+										@@include('./partials/flights-section/flights-info__more/_variant-2(return-more-transfer-1).html')
+										@@include('./partials/flights-section/flights-info__more/_variant-2(return-more-transfer-2).html')
+										@@include('./partials/flights-section/flights-info__more/_variant-2(return-more).html')
+									</div>
+									
+									<div class="col-md-2">
+										@@include('./partials/_sidebar-more.html')
+									</div>
+									
+								</div>
+								
+							</div>
+						</section>
+						
+					
+				</div>
+			</div>
+			
+		</div>
+
+
+		<footer class="footer py-3 mx-5">
+			<div class="container">
+				<div class="row">
+					<div class="col text-center">
+						<small class="footer__copyright text-muted">© 2016 Vliegwel. All rights reserved.</small>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+   
+   
+    	<!-- SCRIPTS -->
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   		<script src='js/popper.min.js'></script>
+    	<script src="js/bootstrap.min.js"></script>
+		<script src="js/main.min.js"></script>
+           
+    </body>
+</html>

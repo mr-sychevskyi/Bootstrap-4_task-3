@@ -1,0 +1,28 @@
+html, body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+.wrapper {
+	flex-grow: 1;
+ 	flex-basis: auto;
+}
+
+div.row,
+div[class|="col"] {
+	margin: 0;
+	padding: 0;
+}
+
+.hidden { display: none; }
+
+.text-underline { text-decoration: underline; }
+
+a:hover, 
+button:hover,
+input:hover,
+select:hover { cursor: pointer; }
+
+* { outline: none; }

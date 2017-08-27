@@ -1,0 +1,72 @@
+// BUTTONS__TYPES
+
+.btn-search {
+	@include button-variant( $v-red, $v-red, darken($v-red, 25%), darken($v-red, 25%) );	
+	@include button-size( 24px, 30px, 1.5rem, 24px, 5px );
+	
+	svg { fill: #fff; }	
+}
+
+
+.btn-icon {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	
+	i.icon-btn { 
+		display: flex; 
+		margin-right: 5px;
+	}
+}
+
+
+.btn-favorites {
+	@include button-variant( $v-grey-light, darken($v-grey-light, 10%) );	
+	@include button-size( 1rem, 2rem, 1.1rem, 1.25rem, 5px );
+	
+	font-weight: 600;
+	svg { fill: #918f92; }
+	i.icon-btn { margin-right: 10px; }
+}
+
+
+.btn-select {
+	@include button-variant( $v-green, $v-green );	
+	@include button-size( 1rem, 3rem, 1rem, 1rem, 5px );
+	
+	font-weight: 600;
+	letter-spacing: 1px;
+}
+
+
+.btn-social {
+	@include button-variant( $bg-sidebar, transparent, $bg-sidebar );	
+	@include button-size( 5px, 10px, .8rem, 5px, 0 );
+	
+	color: #727475;
+	svg { fill: #918f92; }	
+}
+// END --> BUTTONS__TYPES
+
+
+
+// BUTTONS__STATE
+.btn-favorites.is-active { background-color: darken($v-grey-light, 10%); }
+
+.btn-social.is-liked {
+	i svg {	fill: $v-green;	}
+}
+// END --> BUTTONS__STATE
+
+
+
+// BUTTONS__HOVER
+.js-btn-more:hover { color: darken( $v-grey-dark, 75% ); }
+
+.js-btn-more:hover,
+.js-btn-more:focus,
+.js-btn-more:active,
+.js-btn-more:visited { text-decoration: underline; }
+
+.btn-social:hover { color: darken(#727475, 50%); }
+// END --> BUTTONS__HOVER

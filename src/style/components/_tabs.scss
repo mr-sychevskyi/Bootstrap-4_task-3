@@ -1,0 +1,24 @@
+// TABS
+.nav.nav-pills {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	
+	.nav-link {
+		color: #757575;
+		background-color: #f5f5f5;
+		border: 1px solid #e0e0e0;
+		
+		.sort-variant { 
+			display: block;
+			font-weight: 700; 
+		}
+	}
+	
+	.nav-link.active {
+		color: #fff;
+		background: $v-rose;
+		border: 1px solid $v-rose;
+	}
+}
+// END --> TABS

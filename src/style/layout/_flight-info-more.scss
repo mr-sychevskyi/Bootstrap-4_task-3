@@ -1,0 +1,86 @@
+// FLIGHTS-INFO__MORE
+.section__content__more {
+
+	.flights-transfer { border-bottom: 1px solid $v-grey-light-2; }	
+	
+	.flights-info__wrap {
+
+		.flights-info__top {
+			margin-bottom: 25px;
+			
+			.airline-logo { margin-right: 15px; }
+			&__airline { margin-left: 100px; }
+		}
+
+		.flights-info__body {
+			display: flex;
+			flex-direction: column;
+
+			&__departure,
+			&__arrival {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				align-items: center;
+				
+				.date { color: $v-grey-deep; }
+				
+				.middle-wrap .city { 
+					margin-left: 20px; 
+					color: $v-grey-deep-2;
+				}
+			}
+			
+			.middle-wrap {
+				display: inline-flex;
+				align-items: center;
+				flex: 2;
+				padding-left: 30px;
+			}
+			
+			.time-waiting__wrap  { 
+				display: flex;
+				justify-content: space-between;
+
+				padding: 15px 10px;
+				margin-top: 15px;
+
+				border-radius: 5px;
+
+				.middle-wrap { padding-left: 35px; }
+				.time-waiting__info { margin-left: 25px; }
+			}
+
+			.time-long { background-color: $v-red-2; }
+			.time-short { background-color: $v-green-2; }
+			
+		}		
+	}	
+}
+// END --> FLIGHTS-INFO__MORE
+
+
+
+// OPEN_STATE_CLASS
+.is-open {
+	.section__content .flights-info__wrap { border-bottom: 2px dashed $v-grey-light-2; }
+	
+//	.section__content__more div.row { flex-direction: column; }
+	
+	.js-btn-more { color: $v-grey-low; }
+	
+	.flight-direction {
+		display: none;
+
+		padding: 15px 0;
+		width: 100%;
+
+		font-weight: 700;
+		text-align: center;
+		text-transform: uppercase;
+
+		color: #3a4351;
+		border-top: 2px dashed $border-section;
+		border-bottom: 2px dashed $border-section;
+	}
+}

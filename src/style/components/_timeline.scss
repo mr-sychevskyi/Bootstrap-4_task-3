@@ -1,0 +1,48 @@
+// ROUTE__TIMELINE
+.route__timeline {	
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	overflow: hidden;
+	padding: 0;
+	
+	&__item {
+		position: relative;
+		
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+		
+		border: 2px solid $v-green;
+		border-radius: 50%;
+		background-color: $v-grey-light;
+		cursor: default;
+		z-index: 10;
+		
+		&:after {
+			content: '';
+
+			position: absolute;
+			top: 45%;
+			left: 100%;
+
+			display: block;
+			width: 100vw;
+			height: 2px;
+
+			background-color: $v-green;
+			z-index: -1;
+			pointer-events: none;
+		}
+		
+		&:last-child:after { content: none; }	
+		&:hover { background-color: $v-green; }
+	}
+	
+	&__item-sm { 
+		width: 15px;
+		height: 15px; 
+	}
+}
+// END --> ROUTE__TIMELINE

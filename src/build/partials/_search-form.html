@@ -1,0 +1,52 @@
+<form>
+								
+	<div class="form-row">
+		<div class="col">
+			<div class="select-wrapper">
+				<select class="airport-select__arrival">
+					<option value="1" selected>London(LGW)</option>
+					<option value='2'>Paris(SHG)</option>
+					<option value='3'>Vancouver(VAI)</option>
+				</select>
+				<button class="select-swap">&nbsp;</button>
+			</div>
+		</div>
+		<div class="col">
+			<select class="airport-select__departure">
+				<option value='1' selected>New York(JFK)</option>
+				<option value='2'>London(LGW)</option>
+				<option value='3'>Vancouver(VAI)</option>
+			</select>
+		</div>
+		
+
+		<div class="col">
+			<input type="date" name="outbound-day" min="2016-06-12" value="2016-06-12">
+		</div>
+		<div class="col">
+			<input type="date" name="return-day" min="2016-06-12" value="2016-06-15">
+		</div>
+		
+		
+		<div class="col">
+			<div class="select-wrapper__payback">
+				<select class="payback-select">
+					<option value='1'>6 month payback</option>
+					<option value='2'>9 month payback</option>
+					<option value='3'>12 month payback</option>
+				</select>
+			</div>	
+		</div>
+		
+		
+		<div class="col">
+			<button class="btn btn-search btn-icon">
+				<i class="icon-btn" aria-hidden="true">
+					@@include('./svg/_icon-search.html') 
+				</i>
+				<span>Search</span>
+			</button>
+		</div>
+	</div>	
+	
+</form>

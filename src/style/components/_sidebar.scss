@@ -1,0 +1,80 @@
+.sidebar {
+	background-color: $bg-sidebar;	
+	border-left: 2px solid $v-grey-light-2;
+
+	height: 100%;
+
+	&__top {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		padding: 5px;
+		
+		border-bottom: 1px solid $v-grey-light-2;
+	}
+
+	&__main {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		
+		padding: 30px 15px;
+		
+		&_title { 
+			margin-bottom: 15px; 
+			
+			font-size: 2.25rem;
+			font-weight: 300;
+			
+			color: #3a4351;
+			text-align: center;
+		}
+		
+		span {
+			font-size: 1.1rem;	
+			display: block;
+			margin-top: 5px;
+		}
+		
+		.btn-select { margin-bottom: 10px; }
+	}
+}
+
+
+
+.section__content__more { 
+	.sidebar {
+		padding: 30px 20px;
+		display: flex;
+		justify-content: space-between;
+		
+		span { color: $v-blue-2; }
+		.total-price { 
+			font-size: 1.1rem;
+			font-weight: 700; 
+		}
+	}
+}
+
+
+// Popover
+div.pop {
+	
+	.social-link {
+		display: inline-block;
+		&:first-child { margin-right: 5px; }
+		
+		white-space: nowrap;
+
+		img { transition: all 0.4s; }
+
+		img:hover {
+			opacity: 0.7;
+			transform: scale(0.95);
+		}
+	}
+	
+}
+
+.social__list-item:first-child { margin-right: 5px; }
+// End --> Popover

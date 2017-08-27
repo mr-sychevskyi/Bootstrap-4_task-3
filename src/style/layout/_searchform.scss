@@ -1,0 +1,89 @@
+form {	
+	
+	input[type="date"] {
+		width: 100%;
+		padding: 24px 12px;
+		padding-left: 44px;
+		
+		font-weight: 700;
+		color: #616161;
+		
+		border-radius: 3px;
+		border: none;
+		background: #fff url('../img/icon-date.svg') no-repeat 12px center;	
+	}
+	
+	input[type="date"]::-webkit-inner-spin-button,
+	input[type="date"]::-webkit-clear-button,
+	input[type="date"]::-webkit-calendar-picker-indicator { display: none; }
+	
+	select {
+		position: relative;
+	
+		width: 100%;
+		padding: 25px 20px;
+			
+		font-weight: 700;
+		color: #616161;
+		border-radius: 3px;
+		
+		border: none;
+		appearance: none;
+		z-index: 10;
+	}
+	
+	.airport-select__departure { background: #fff; }
+	
+	.select-wrapper,
+	.select-wrapper__payback {
+    	position: relative;
+		width: 100%;
+		
+		background: #fff;
+		border-radius: 3px;
+	}
+	
+	.select-swap {
+		position: absolute;
+		top: 50%;
+		right: 10px;
+		transform: translateY(-50%);
+		
+		display: inline-block;
+		width: 25px;
+		height: 25px;
+		
+		background: #fff url('../img/icon-arrows.svg') no-repeat center;
+	
+		border: none;	
+		outline: none;
+		z-index: 20;
+		
+		&:hover { opacity: .5; }
+	}
+
+	
+	.select-wrapper__payback:after { 	
+		content: '';
+		
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		right: 10px;
+		
+		display: inline-block;
+		width: 12px;
+		height: 12px;
+
+		background: transparent url('../img/icon-arrow-down.png') no-repeat center;
+		cursor: pointer;
+	}
+	
+	.payback-select {
+		padding-left: 50px;
+		padding-right: 30px;
+		
+		background: transparent url('../img/icon-card.png') no-repeat 12px center;
+	}
+	
+}

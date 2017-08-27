@@ -1,0 +1,323 @@
+@media only screen and (max-width: 1199px) and (min-width: 992px) {
+		
+	.form-wrap {
+		
+		input[type="date"] { font-size: .8rem; }
+		select { 
+			padding-left: 10px;
+			font-size: .8rem; 
+		}
+		select.payback-select {
+			padding-left: 45px;
+			font-size: .8rem; 
+		}
+				
+		.btn-search { padding: 22px 30px; }
+	}
+	
+	
+	.section__content {
+		
+		.sidebar {
+			&__top {
+				.btn-social { 
+					padding: 5px; 
+					i { margin-right: 3px; }
+				}	
+			}
+			
+			&__main {
+				.btn-select { padding: 1rem 2.25rem; }
+			}
+		}
+	}
+	
+	.section__content__more {
+		.middle-wrap { font-size: .9rem; }
+	}
+	
+}
+
+
+
+@media only screen and (max-width: 992px) and (min-width: 768px) {
+		
+	.flights-sort {
+		.nav-pills {  justify-content: flex-start; }
+		.nav-pills .nav-item:first-of-type { margin-right: 15px; }
+	}
+	
+	
+	.section__content {
+		
+		.flights-info__wrap {
+
+			.flights-info__top { 
+				margin-bottom: 40px; 
+				font-size: .9rem;
+			}
+
+			.flights-info__body {
+				flex-wrap: wrap;
+
+				&__departure,
+				&__arrival {
+					flex-basis: 50%;
+					order: 1;
+					
+					.time { font-size: 1.6rem; }
+				}
+
+				&__route {
+					flex-basis: 100%;
+					order: 0;
+					margin-bottom: 35px;
+				}
+			}	
+		}
+		
+		.sidebar {
+			&__top {
+				.btn-social { 
+					flex: 1; 					
+					span { display: none; }
+				}
+			}
+			
+			&__main {
+				
+				&_title { font-size: 1.75rem }
+				span {
+					margin-bottom: 20px; 
+					font-size: 1rem;	
+				}
+				.btn-select { 
+					padding: .75rem 1.5rem; 
+					margin-bottom: 25px;
+				}				
+			}
+		}
+	}
+	
+	
+	.section__content__more {
+		
+		.flights-info__wrap {
+
+			.flights-info__top__airline { margin: 0 auto; }
+			
+			.flights-info__body {
+
+				&__departure,
+				&__arrival {
+					flex-wrap: wrap;
+					
+					span.time,
+					span.date { 
+						flex-basis: 50%;	
+						order: 1;
+					}
+					
+					span.time { font-size: 1.5rem; }
+					span.date { font-size: 1.2rem; text-align: right; }
+				}
+				
+				&__departure { margin-bottom: 15px; }
+
+				.middle-wrap {
+					flex-basis: 100%;
+					justify-content: space-between;
+					order: 0;
+					padding-left: 0px;
+				}
+
+				.time-waiting__wrap {
+					.middle-wrap { flex-basis: 0; }
+					.time-waiting__info { display: none; }
+				}
+			}
+		}	
+		
+		.sidebar { padding: 30px 10px; }
+	}
+}
+
+
+
+@media only screen and (max-width: 992px) {
+	
+	.form-wrap {
+		.col { 
+			flex: 50%; 
+			margin-bottom: 10px;
+		}
+		
+		.col:last-of-type { margin-bottom: 0; }
+		.col:nth-last-of-type(2) { margin-bottom: 0; }
+		
+		.btn-search { width: 100%; }
+	}
+	
+}
+
+
+
+@media only screen and (max-width: 767px) {	
+
+	.header { padding: 25px 0; }
+	
+	.flights-sort {
+		.nav-pills { margin-bottom: 15px; }
+		.nav-pills .nav-item { width: 48%; }
+		
+		.btn-favorites { width: 48%; }
+	}
+	
+	
+	.section__content .flights-info__wrap-separator {
+		border-left: none;
+		border-top: 2px solid $border-section;
+	}
+	
+	.section__content__more .flights-info__wrap-separator { border-left: none; }
+	
+	
+	.sidebar {
+		border-left: none;
+		&__top {
+			justify-content: space-around;
+				
+			.btn-social { flex-basis: 45%; }
+		}
+		
+		&__main {		
+			padding: 10px 15px;
+
+			&_title { 
+				font-size: 2.25rem;
+				font-weight: 300;
+
+				color: #3a4351;
+				margin-bottom: 15px;
+
+				span {
+					display: inline;
+					font-size: 1.1rem;	
+				}
+			}
+
+
+			.btn-select { 
+				width: 100%;
+				margin-bottom: 10px;
+			}
+
+			.btn-sm-100 {
+				padding: 0.75rem 2rem;
+				width: 100%;
+			}
+
+		}
+	}
+	
+	.section__content__more .sidebar { padding: 20px; }
+	
+
+	.is-open {
+		.section__content .flights-info__wrap { border-bottom: none; }
+		.section__content__more div.row { flex-direction: column; }
+		div.flight-direction { display: block; }
+	}
+	
+}
+
+
+
+@media only screen and (max-width: 576px) {	
+	
+	.form-wrap {
+		.col { flex-basis: 100%; }
+		.col:nth-last-of-type(2) { margin-bottom: 10px; }	
+	} 
+	
+	.flights-sort {
+		.nav-pills .nav-item { width: 100%; }
+		
+		.nav-pills .nav-item {
+			margin: 0;
+			margin-bottom: 15px;
+		}
+		
+		.btn-favorites { width: 100%; }
+	}
+	
+	
+	.section__content .flights-info__wrap {
+
+		.flights-info__top { 
+			margin-bottom: 40px; 
+			font-size: .9rem;
+		}
+
+		.flights-info__body {
+			flex-wrap: wrap;
+
+			&__departure,
+			&__arrival {
+				flex-basis: 50%;
+				order: 1;
+			}
+
+			&__route {
+				flex-basis: 100%;
+				order: 0;
+				margin-bottom: 35px;
+			}
+		}	
+	}	
+		
+	.flights-info__wrap .flights-info__body__departure .time, 
+	.flights-info__wrap .flights-info__body__arrival .time { font-size: 1.6rem; }
+		
+}
+
+
+
+@media only screen and (max-width: 480px) {	
+	
+	.section__content__more .flights-info__wrap {
+			
+		.flights-info__top__airline { margin: 0 auto; }
+			
+		.flights-info__body {
+
+			&__departure,
+			&__arrival {
+				flex-wrap: wrap;
+					
+				span.time,
+				span.date { 
+					flex-basis: 50%;	
+					order: 1;
+				}
+					
+				span.time { font-size: 1.5rem; }
+				span.date { font-size: 1.2rem; text-align: right; }
+			}
+				
+			&__departure { margin-bottom: 15px; }
+
+			.middle-wrap {
+				flex-basis: 100%;
+				justify-content: space-between;
+				order: 0;
+				padding-left: 0px;
+			}
+
+			.time-waiting__wrap {
+				.middle-wrap { flex-basis: 0; }
+				.time-waiting__info { display: none; }
+			}
+		}
+	}	
+}
