@@ -2,7 +2,7 @@
 
 .btn-search {
 	@include button-variant( $v-red, $v-red, darken($v-red, 25%), darken($v-red, 25%) );	
-	@include button-size( 24px, 30px, 1.5rem, 24px, 5px );
+	@include button-size( 1.5rem, 2.25rem, 1.5rem, 1.5rem, 5px );
 	
 	svg { fill: #fff; }	
 }
@@ -56,6 +56,8 @@
 .btn-social.is-liked {
 	i svg {	fill: $v-green;	}
 }
+
+.btn-social:focus { box-shadow: none; }
 // END --> BUTTONS__STATE
 
 

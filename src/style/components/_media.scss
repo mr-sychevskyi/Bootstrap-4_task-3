@@ -12,7 +12,7 @@
 			font-size: .8rem; 
 		}
 				
-		.btn-search { padding: 22px 30px; }
+		.btn-search { padding: 1.4rem 2rem; }
 	}
 	
 	
@@ -155,7 +155,11 @@
 		.col:last-of-type { margin-bottom: 0; }
 		.col:nth-last-of-type(2) { margin-bottom: 0; }
 		
-		.btn-search { width: 100%; }
+		.btn-search { 
+			padding-left: 0;
+			padding-right: 0;
+			width: 100%; 
+		}
 	}
 	
 }
@@ -205,7 +209,6 @@
 					font-size: 1.1rem;	
 				}
 			}
-
 
 			.btn-select { 
 				width: 100%;
