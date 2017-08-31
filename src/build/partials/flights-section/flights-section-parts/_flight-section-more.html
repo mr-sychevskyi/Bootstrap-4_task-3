@@ -1,0 +1,36 @@
+<div class="flights-info__wrap @@flights-info-type">
+
+	<div class="flights-info__top">
+		<span class="flights-info__top__airline"><img class="airline-logo" src="@@airline-logo" alt="airline-logo"> @@flights-airline</span>
+	</div>
+
+	<div class="flights-info__body">								
+		<div class="flights-info__body__departure">
+			<span class="time time-departure">@@time.departure</span>
+			<div class="airport-departure middle-wrap">
+				@@include('../../svg/_air-up.html')	
+				<span class="city city-departure">@@airport.departure</span> 	
+			</div>
+			<span class="date date-departure">@@date.departure</span>
+		</div>
+												
+		<div class="flights-info__body__arrival">
+			<span class="time time-arrival">@@time.arrival</span>
+			<div class="airport-arrival middle-wrap">
+				@@include('../../svg/_air-down.html')
+				<span class="city city-arrival">@@airport.arrival</span> 	
+			</div>
+			<span class="date date-arrival">@@date.arrival</span>
+		</div>
+		
+		<div class="time-waiting__wrap @@trasfer-waiting">
+			<strong class="text-brown">Transfer</strong>
+			<div class="middle-wrap">
+				@@include('../../svg/_icon-clock.html')
+				<span class="time-waiting__info">Long wait</span>
+			</div>
+			<span class="time-waiting">@@time-waiting</span>
+		</div>
+	</div>
+
+</div>

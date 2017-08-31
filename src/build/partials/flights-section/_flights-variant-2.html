@@ -1,0 +1,199 @@
+<section class="flights-info">
+    					
+	<div class="section__content">
+		<div class="row">
+
+			<div class="col-md-5">
+				<!-- Flight-outbound-default -->
+				@@include('./flights-section-parts/_flight-section.html', {
+					"flights-direction": "Outbound",
+					"flights-airline": "Jetblue Airways",
+					"airline-logo": "img/airline-logo-1.png",
+					"full-time": "18h 40m",
+					"transfers": " @@include('./timeline-transfers/_transfers-1.html') ",
+					"time": {
+						"departure": "16:10",
+						"arrival": "10:50"
+					},
+					"city": {
+						"departure": "London",
+						"arrival": "New York"
+					},
+					"airport": {
+						"departure": "LGW",
+						"arrival": "JFK"
+					},
+					"time-sup": "time-up-sup"
+				})
+				<!-- End -->
+			</div>
+																			
+			<div class="col-md-5">
+				<!-- Flight-return-default -->
+				@@include('./flights-section-parts/_flight-section.html', {
+					"flights-info-type": "flights-info__wrap-separator",
+					"flights-direction": "Return",
+					"flights-airline": "Lufthansa Airline",
+					"airline-logo": "img/airline-logo-2.png",
+					"full-time": "10h 40m",
+					"transfers": " @@include('./timeline-transfers/_transfers-2.html') ",
+					"time": {
+							"departure": "06:40",
+							"arrival": "17:20"
+					},
+					"city": {
+							"departure": "New York",
+							"arrival": "London"
+					},
+					"airport": {
+							"departure": "JFK",
+							"arrival": "LGW"
+					}
+				})
+				<!-- End -->
+			</div>
+										
+			<div class="col-md-2">
+				<!-- Flight-info-sidebar -->
+				@@include('../sidebar/_sidebar.html', {
+	 				"month-cost": "€30,50"
+				})
+				<!-- End -->
+			</div>
+										
+		</div>
+	</div>
+							
+	<div class="section__content__more">
+								
+		<div class="row">
+
+			<div class="col-md-5">
+				<!-- Flight-outbound-more-transfer -->
+				@@include('./flights-section-parts/_flight-section-more.html', {
+					"flights-info-type": "flights-transfer",
+					"flights-direction": "Outbound",
+					"flights-airline": "Jetblue Airways",
+					"airline-logo": "img/airline-logo-1.png",
+					"time": {
+						"departure": "16:10",
+						"arrival": "20:10"
+					},
+					"airport": {
+						"departure": "London Gatwick",
+						"arrival": "Vancouver Intern."
+					},
+						"date": {
+						"departure": "12 June, Sun",
+						"arrival": "12 June, Sun"
+					},
+					"trasfer-waiting": "time-long",
+					"time-waiting": "9h 5m"
+				})
+				<!-- End -->
+
+									
+				<!-- Flight-outbound-more-end -->
+				@@include('./flights-section-parts/_flight-section-more.html', {
+					"flights-direction": "Outbound",
+					"flights-airline": "Jetblue Airways",
+					"airline-logo": "img/airline-logo-1.png",
+					"time": {
+						"departure": "07:15",
+						"arrival": "10:50"
+					},
+					"airport": {
+						"departure": "Vancouver Intern.",
+						"arrival": "John F. Kennedy"
+					},
+						"date": {
+						"departure": "13 June, Sat",
+						"arrival": "13 June, Sat"
+					}
+				})
+				<!-- End -->
+			</div>
+									
+			<div class="col-md-5">
+				<!-- Flight-return-more-transfer -->
+				@@include('./flights-section-parts/_flight-section-more.html', {
+					"flights-info-type": "flights-info__wrap-separator flights-transfer",
+					"flights-direction": "Return",
+					"flights-airline": "Lufthansa Airline",
+					"airline-logo": "img/airline-logo-2.png",
+					"time": {
+						"departure": "06:40",
+						"arrival": "10:25"
+					},
+					"airport": {
+						"departure": "John F. Kennedy",
+						"arrival": "Vancouver Intern."
+					},
+						"date": {
+						"departure": "15 June, Wed",
+						"arrival": "15 June, Wed"
+					},
+					"trasfer-waiting": "time-short",
+					"time-waiting": "0h 45m"
+				})
+				<!-- End -->
+										
+										
+				<!-- Flight-return-more-transfer -->
+				@@include('./flights-section-parts/_flight-section-more.html', {
+					"flights-info-type": "flights-info__wrap-separator flights-transfer",
+					"flights-direction": "Return",
+					"flights-airline": "Lufthansa Airline",
+					"airline-logo": "img/airline-logo-2.png",
+					"time": {
+						"departure": "11:10",
+						"arrival": "13:30"
+					},
+					"airport": {
+						"departure": "Vancouver Intern.",
+						"arrival": "Edinburgh"
+					},
+						"date": {
+						"departure": "15 June, Wed",
+						"arrival": "15 June, Wed"
+					},
+					"trasfer-waiting": "time-short",
+					"time-waiting": "1h 20m"
+				})
+				<!-- End -->
+										
+										
+				<!-- Flight-return-more-end -->
+				@@include('./flights-section-parts/_flight-section-more.html', {
+					"flights-info-type": "flights-info__wrap-separator",
+					"flights-direction": "Return",
+					"flights-airline": "Lufthansa Airline",
+					"airline-logo": "img/airline-logo-2.png",
+					"time": {
+						"departure": "14:50",
+						"arrival": "17:20"
+					},
+					"airport": {
+						"departure": "Edinburgh",
+						"arrival": "London Gatwick"
+					},
+						"date": {
+						"departure": "15 June, Wed",
+						"arrival": "15 June, Wed"
+					}
+				})
+				<!-- End -->
+			</div>
+									
+			<div class="col-md-2">
+				<!-- Flight-info-sidebar-more -->
+				@@include('../sidebar/_sidebar-more.html', {
+					"total-price": "€183"
+				})
+				<!-- End -->
+			</div>
+									
+		</div>
+								
+	</div>
+</section>

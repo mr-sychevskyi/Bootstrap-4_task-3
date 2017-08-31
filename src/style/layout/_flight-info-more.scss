@@ -1,7 +1,12 @@
 // FLIGHTS-INFO__MORE
 .section__content__more {
 
-	.flights-transfer { border-bottom: 1px solid $v-grey-light-2; }	
+	.time-waiting__wrap { display: none; }
+	
+	.flights-transfer { 
+		.time-waiting__wrap { display: flex; }
+		border-bottom: 1px solid $v-grey-light-2; 
+	}	
 	
 	.flights-info__wrap {
 
@@ -39,7 +44,6 @@
 			}
 			
 			.time-waiting__wrap  { 
-				display: flex;
 				justify-content: space-between;
 
 				padding: 15px 10px;
