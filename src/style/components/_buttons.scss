@@ -55,6 +55,7 @@
 
 .btn-social.is-liked {
 	i svg {	fill: $v-green;	}
+	span  { color: $v-green; }
 }
 
 .btn-social:focus { box-shadow: none; }
