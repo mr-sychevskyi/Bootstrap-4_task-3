@@ -174,25 +174,25 @@
 	</div>
 </div>
     					
-    					
     					<!-- Flights-section -->
 						<section class="flights-info">
     					
-							<div class="section__content">
-								<div class="row">
+	<div class="section__content">
+		<div class="row">
 
-									<div class="col-md-5">
-										<div class="flights-info__wrap">
+			<div class="col-md-5">
+				<!-- Flight-outbound-default -->
+				<div class="flights-info__wrap @@flights-info-type">
 
 	<div class="flights-info__top">
-		<span>Outbound</span>
-		<span class="flights-info__top__airline">JetBlue Airways <img class="airline-logo" src="img/airline-logo-1.png" alt="airline-logo"></span>
+		<span class="flights-direction">Outbound</span>
+		<span class="flights-info__top__airline">Jetblue Airways <img class="airline-logo" src="img/airline-logo-1.png" alt="airline-logo"></span>
 	</div>
 
 	<div class="flights-info__body">
 		<div class="flights-info__body__departure align-self-end">
 			<h4 class="time time-departure">03:20</h4>
-			<span class="city city-start">London</span> 	
+			<span class="city city-departure">London</span> 	
 		</div>
 												
 		<div class="flights-info__body__route">
@@ -221,8 +221,9 @@
 			</div>
 
 			<ul class="route__timeline list-unstyled">
-				<li class="route__timeline__item" data-toggle="tooltip" data-placement="right" title="Departure from LGW airport at 03:20">&nbsp;</li>	
-				<li class="route__timeline__item" data-toggle="tooltip" data-placement="left" title="Arrival to JFK airport at 22:55">&nbsp;</li>		
+				<li class="route__timeline__item" data-toggle="tooltip" data-placement="right" title="Departure from London Gatwick airport at 16:10. Local time.">&nbsp;</li>	
+				
+				<li class="route__timeline__item" data-toggle="tooltip" data-placement="left" title="Arrival to John F. Kennedy airport at 10:50. Local time.">&nbsp;</li>		
 			</ul>	
 
 			<div class="route__airport">
@@ -233,25 +234,27 @@
 
 		<div class="flights-info__body__arrival align-self-end text-right">
 			<h5 class="time time-arrival time-down-sup">22:55</h5>
-			<span class="city city-end">New York</span>		
+			<span class="city city-arrival">New York</span>		
 		</div>
 	</div>
 
 </div>
-									</div>
+				<!-- End -->
+			</div>
 																			
-									<div class="col-md-5">
-										<div class="flights-info__wrap flights-info__wrap-separator">
+			<div class="col-md-5">
+				<!-- Flight-return-default -->
+				<div class="flights-info__wrap flights-info__wrap-separator">
 
 	<div class="flights-info__top">
-		<span>Return</span>
+		<span class="flights-direction">Return</span>
 		<span class="flights-info__top__airline">Lufthansa Airline <img class="airline-logo" src="img/airline-logo-2.png" alt="airline-logo"></span>
 	</div>
 
 	<div class="flights-info__body">
 		<div class="flights-info__body__departure align-self-end">
-			<h5 class="time time-departure">6:40</h5>
-			<span class="city city-start">New York</span> 	
+			<h4 class="time time-departure">06:40</h4>
+			<span class="city city-departure">New York</span> 	
 		</div>
 												
 		<div class="flights-info__body__route">
@@ -280,10 +283,10 @@
 			</div>
 
 			<ul class="route__timeline list-unstyled">
-				<li class="route__timeline__item" data-toggle="tooltip" data-placement="right" title="Departure from JFK airport at 06:40">&nbsp;</li>	
-				<li class="route__timeline__item route__timeline__item-sm" data-toggle="tooltip" data-placement="top" title="Arrival in the airport Vancouver Intern. at 10:25. Wait time: 45 min. Local time.">&nbsp;</li>		
-				<li class="route__timeline__item route__timeline__item-sm" data-toggle="tooltip" data-placement="top" title="Arrival in the airport Edinburgh at 13:30. Wait time: 1 h 20 min. Local time.">&nbsp;</li>	
-				<li class="route__timeline__item" data-toggle="tooltip" data-placement="left" title="Arrival to LGW airport at 17:20">&nbsp;</li>		
+				<li class="route__timeline__item" data-toggle="tooltip" data-placement="right" title="Departure from London Gatwick airport at 16:10. Local time.">&nbsp;</li>	
+				 <li class="route__timeline__item route__timeline__item-sm" data-toggle="tooltip" data-placement="left" title="Arrival in the airport Vancouver Intern. at 10:25. Wait time: 0 h 45 min. Local time.">&nbsp;</li>				
+<li class="route__timeline__item route__timeline__item-sm" data-toggle="tooltip" data-placement="left" title="Arrival in the airport Edinburgh at 13:30. Wait time: 1 h 20 min. Local time.">&nbsp;</li>				 
+				<li class="route__timeline__item" data-toggle="tooltip" data-placement="left" title="Arrival to John F. Kennedy airport at 10:50. Local time.">&nbsp;</li>		
 			</ul>	
 
 			<div class="route__airport">
@@ -293,16 +296,18 @@
 		</div>
 
 		<div class="flights-info__body__arrival align-self-end text-right">
-			<h5 class="time time-arrival">17:20</h5>
-			<span class="city city-end">London</span>		
+			<h5 class="time time-arrival @@time-sup">17:20</h5>
+			<span class="city city-arrival">London</span>		
 		</div>
 	</div>
 
 </div>
-									</div>
+				<!-- End -->
+			</div>
 										
-									<div class="col-md-2">
-										<div class="sidebar">
+			<div class="col-md-2">
+				<!-- Flight-info-sidebar -->
+				<div class="sidebar">
 	<!-- Sidebar-top -->
 	 <div class="sidebar__top">
 	<button class="btn btn-social btn-icon js-btn-like" href="#">
@@ -380,7 +385,7 @@
        data-toggle="popover" 
        data-html="true" 
        data-trigger="focus"
-       data-placement="top" 
+       data-placement="left" 
 	   data-content="<div class='pop'><a class='social-link' href='#'><img src='img/logo-fb.png'></a><a class='social-link' href='#'><img src='img/logo-instagram.png'></a></div>" >
 		<i class="icon-btn" aria-hidden="true">
 			<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 481.6 481.6" style="enable-background:new 0 0 481.6 481.6;" xml:space="preserve" width="16px" height="20px">
@@ -424,35 +429,39 @@
 	</button>								 
 </div>	
 	 
-	<!-- Sidebar-top -->
+	<!-- Sidebar-main -->
 	 <div class="sidebar__main">
-	<h4 class="sidebar__main_title month-cost">
-		€30,50
-		<span class="text-muted">per month</span>
-	</h4>
-												
-	<a href="" class="btn btn-select">Select</a>
-	<a href="" class="btn btn-sm-100 js-btn-more text-darkgrey text-underline">View details</a>
-</div>  
-</div>
-									</div>
-										
-								</div>
-							</div>
-							
-							<div class="section__content__more">
-								<div class="row">
+		<h4 class="sidebar__main_title month-cost">
+			€30,50
+			<span class="text-muted">per month</span>
+		</h4>
 
-									<div class="col-md-5">
-										<div class="flights-info__wrap">
+		<a href="" class="btn btn-select">Select</a>
+		<a href="" class="btn btn-sm-100 js-btn-more text-darkgrey text-underline">View details</a>
+	</div> 
+</div>
+				<!-- End -->
+			</div>
+										
+		</div>
+	</div>
+	
+													
+	<div class="section__content__more">
+								
+		<div class="row">
+
+			<div class="col-md-5">						
+				<!-- Flight-outbound-more-end -->
+				<div class="flights-info__wrap @@flights-info-type">
 
 	<div class="flights-info__top">
-		<span class="flights-info__top__airline"><img class="airline-logo" src="img/airline-logo-1.png" alt="airline-logo"> JetBlue Airways</span>
+		<span class="flights-info__top__airline"><img class="airline-logo" src="img/airline-logo-1.png" alt="airline-logo"> Jetblue Airways</span>
 	</div>
 
 	<div class="flights-info__body">								
 		<div class="flights-info__body__departure">
-			<span class="time time-departure">03:20</span>
+			<span class="time time-departure">03:22</span>
 			<div class="airport-departure middle-wrap">
 				<svg xmlns="http://www.w3.org/2000/svg"
 	xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -464,7 +473,7 @@
 	</filter>
 	<image x="0" y="0" width="26" height="11" filter="url(#filter0)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAALCAQAAADLyVV7AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAADcSURBVCjPldIhS0NRGMbx34Vhc0EUtBhsixZRk8EmmPULGFY20LQi+ClcECxaBOOKiGKSga4o4idwTUEuTBCO5V4457oJvm867/P8X57DOcS15cKyf9a1IOhZHavWNd141EnHDSNBENzaTJQVJ/JC61e3tQohCO5ty0zbM4imubUqlBURy37xGZ2+nGuMS77oI8HKfrVvtjQd65pLsMOKfeTMhiy2HAjetdQwZcddAjxpm/kdJ3MleLbryDC58Kn1ya+zoO3SdwQMNNUnAzW86ckNLZlHX9fD33/gB9B1avH0tviKAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE3LTA4LTAyVDEwOjA5OjM0KzAwOjAwinuwJQAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxNy0wOC0wMlQxMDowOTozNCswMDowMPsmCJkAAAAASUVORK5CYII=" />
 </svg>	
-				<span class="city city-start">London Gatwick</span> 	
+				<span class="city city-departure">London Gatwick</span> 	
 			</div>
 			<span class="date date-departure">13 June, Sat</span>
 		</div>
@@ -482,24 +491,71 @@
 	</filter>
 	<image x="0" y="0" width="26" height="13" filter="url(#filter0)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAANCAQAAAAdkLZmAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAADqSURBVCjPhdEtSwRRGMXx32AQZZHV5vpWBBdcZCYoYjAtLBgUEUyC0W73A/gpxGoSLGKwGAQtazIJRhExrcjqyrUMu6POjuem85z75zmXy2/VHKv5R5HpH35P0DRYDK35UM34dUFwWAwtCM4zfkkQfFktgkYFwUbXVwRB8GikHzLgU9uVkut08u5AhLKK0/67dnW03Dqyr2HCU7or2Cqq2PDavZg9L8bz68GDE8sm/6TDti2aVfKmlf2lHr5pRSxRzm3zrOnOjTPtKCeekUjEElM56b16pEhjXXwufQjsFEM9DZkXq+q4dPENrJhAIwEI8hQAAAAldEVYdGRhdGU6Y3JlYXRlADIwMTctMDgtMDJUMTA6MDk6NDgrMDA6MDBHHtNIAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE3LTA4LTAyVDEwOjA5OjQ4KzAwOjAwNkNr9AAAAABJRU5ErkJggg==" />
 </svg>
-				<span class="city city-start">John F. Kennedy</span> 	
+				<span class="city city-arrival">John F. Kennedy</span> 	
 			</div>
 			<span class="date date-arrival">13 June, Sat</span>
+		</div>
+		
+		<div class="time-waiting__wrap @@trasfer-waiting">
+			<strong class="text-brown">Transfer</strong>
+			<div class="middle-wrap">
+				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 438.533 438.533" style="enable-background:new 0 0 438.533 438.533;" xml:space="preserve">
+<g>
+	<g>
+		<path d="M409.133,109.203c-19.608-33.592-46.205-60.189-79.798-79.796C295.736,9.801,259.058,0,219.273,0    c-39.781,0-76.47,9.801-110.063,29.407c-33.595,19.604-60.192,46.201-79.8,79.796C9.801,142.8,0,179.489,0,219.267    c0,39.78,9.804,76.463,29.407,110.062c19.607,33.592,46.204,60.189,79.799,79.798c33.597,19.605,70.283,29.407,110.063,29.407    s76.47-9.802,110.065-29.407c33.593-19.602,60.189-46.206,79.795-79.798c19.603-33.596,29.403-70.284,29.403-110.062    C438.533,179.485,428.732,142.795,409.133,109.203z M353.742,297.208c-13.894,23.791-32.736,42.64-56.527,56.534    c-23.791,13.894-49.771,20.834-77.945,20.834c-28.167,0-54.149-6.94-77.943-20.834c-23.791-13.895-42.633-32.743-56.527-56.534    c-13.897-23.791-20.843-49.772-20.843-77.941c0-28.171,6.949-54.152,20.843-77.943c13.891-23.791,32.738-42.637,56.527-56.53    c23.791-13.895,49.772-20.84,77.943-20.84c28.173,0,54.154,6.945,77.945,20.84c23.791,13.894,42.634,32.739,56.527,56.53    c13.895,23.791,20.838,49.772,20.838,77.943C374.58,247.436,367.637,273.417,353.742,297.208z" fill="#424242"/>
+		<path d="M246.68,109.631h-18.274c-2.669,0-4.853,0.859-6.57,2.57c-1.706,1.713-2.565,3.9-2.565,6.565v100.5h-63.953    c-2.667,0-4.853,0.855-6.567,2.564c-1.712,1.712-2.568,3.901-2.568,6.571v18.271c0,2.666,0.856,4.856,2.568,6.567    c1.715,1.711,3.905,2.566,6.567,2.566h91.367c2.662,0,4.853-0.855,6.561-2.566c1.711-1.711,2.573-3.901,2.573-6.567V118.766    c0-2.663-0.862-4.849-2.573-6.565C251.536,110.49,249.346,109.631,246.68,109.631z" fill="#424242"/>
+	</g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+				<span class="time-waiting__info">Long wait</span>
+			</div>
+			<span class="time-waiting">@@time-waiting</span>
 		</div>
 	</div>
 
 </div>
-									</div>
+				<!-- End -->
+			</div>
 									
-									<div class="col-md-5">
-										<div class="flights-info__wrap flights-info__wrap-separator flights-transfer">
+			<div class="col-md-5">
+				<!-- Flight-return-more-transfer -->
+				<div class="flights-info__wrap flights-info__wrap-separator flights-transfer">
 
 	<div class="flights-info__top">
 		<span class="flights-info__top__airline"><img class="airline-logo" src="img/airline-logo-2.png" alt="airline-logo"> Lufthansa Airline</span>
 	</div>
 
-	<div class="flights-info__body">
-											
+	<div class="flights-info__body">								
 		<div class="flights-info__body__departure">
 			<span class="time time-departure">06:40</span>
 			<div class="airport-departure middle-wrap">
@@ -513,7 +569,7 @@
 	</filter>
 	<image x="0" y="0" width="26" height="11" filter="url(#filter0)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAALCAQAAADLyVV7AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAADcSURBVCjPldIhS0NRGMbx34Vhc0EUtBhsixZRk8EmmPULGFY20LQi+ClcECxaBOOKiGKSga4o4idwTUEuTBCO5V4457oJvm867/P8X57DOcS15cKyf9a1IOhZHavWNd141EnHDSNBENzaTJQVJ/JC61e3tQohCO5ty0zbM4imubUqlBURy37xGZ2+nGuMS77oI8HKfrVvtjQd65pLsMOKfeTMhiy2HAjetdQwZcddAjxpm/kdJ3MleLbryDC58Kn1ya+zoO3SdwQMNNUnAzW86ckNLZlHX9fD33/gB9B1avH0tviKAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE3LTA4LTAyVDEwOjA5OjM0KzAwOjAwinuwJQAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxNy0wOC0wMlQxMDowOTozNCswMDowMPsmCJkAAAAASUVORK5CYII=" />
 </svg>	
-				<span class="city city-start">John F. Kennedy</span> 	
+				<span class="city city-departure">John F. Kennedy</span> 	
 			</div>
 			<span class="date date-departure">15 June, Wed</span>
 		</div>
@@ -531,11 +587,11 @@
 	</filter>
 	<image x="0" y="0" width="26" height="13" filter="url(#filter0)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAANCAQAAAAdkLZmAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAADqSURBVCjPhdEtSwRRGMXx32AQZZHV5vpWBBdcZCYoYjAtLBgUEUyC0W73A/gpxGoSLGKwGAQtazIJRhExrcjqyrUMu6POjuem85z75zmXy2/VHKv5R5HpH35P0DRYDK35UM34dUFwWAwtCM4zfkkQfFktgkYFwUbXVwRB8GikHzLgU9uVkut08u5AhLKK0/67dnW03Dqyr2HCU7or2Cqq2PDavZg9L8bz68GDE8sm/6TDti2aVfKmlf2lHr5pRSxRzm3zrOnOjTPtKCeekUjEElM56b16pEhjXXwufQjsFEM9DZkXq+q4dPENrJhAIwEI8hQAAAAldEVYdGRhdGU6Y3JlYXRlADIwMTctMDgtMDJUMTA6MDk6NDgrMDA6MDBHHtNIAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE3LTA4LTAyVDEwOjA5OjQ4KzAwOjAwNkNr9AAAAABJRU5ErkJggg==" />
 </svg>
-				<span class="city city-start">Vancouver Intern.</span> 	
+				<span class="city city-arrival">Vancouver Intern.</span> 	
 			</div>
 			<span class="date date-arrival">15 June, Wed</span>
 		</div>
-												
+		
 		<div class="time-waiting__wrap time-short">
 			<strong class="text-brown">Transfer</strong>
 			<div class="middle-wrap">
@@ -577,21 +633,24 @@
 <g>
 </g>
 </svg>
-				<span class="time-waiting__info">Wait</span>
+				<span class="time-waiting__info">Long wait</span>
 			</div>
 			<span class="time-waiting">0h 45m</span>
 		</div>
 	</div>
 
 </div>
-										<div class="flights-info__wrap flights-info__wrap-separator flights-transfer">
+				<!-- End -->
+										
+										
+				<!-- Flight-return-more-transfer -->
+				<div class="flights-info__wrap flights-info__wrap-separator flights-transfer">
 
 	<div class="flights-info__top">
 		<span class="flights-info__top__airline"><img class="airline-logo" src="img/airline-logo-2.png" alt="airline-logo"> Lufthansa Airline</span>
 	</div>
 
-	<div class="flights-info__body">
-											
+	<div class="flights-info__body">								
 		<div class="flights-info__body__departure">
 			<span class="time time-departure">11:10</span>
 			<div class="airport-departure middle-wrap">
@@ -605,7 +664,7 @@
 	</filter>
 	<image x="0" y="0" width="26" height="11" filter="url(#filter0)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAALCAQAAADLyVV7AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAADcSURBVCjPldIhS0NRGMbx34Vhc0EUtBhsixZRk8EmmPULGFY20LQi+ClcECxaBOOKiGKSga4o4idwTUEuTBCO5V4457oJvm867/P8X57DOcS15cKyf9a1IOhZHavWNd141EnHDSNBENzaTJQVJ/JC61e3tQohCO5ty0zbM4imubUqlBURy37xGZ2+nGuMS77oI8HKfrVvtjQd65pLsMOKfeTMhiy2HAjetdQwZcddAjxpm/kdJ3MleLbryDC58Kn1ya+zoO3SdwQMNNUnAzW86ckNLZlHX9fD33/gB9B1avH0tviKAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE3LTA4LTAyVDEwOjA5OjM0KzAwOjAwinuwJQAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxNy0wOC0wMlQxMDowOTozNCswMDowMPsmCJkAAAAASUVORK5CYII=" />
 </svg>	
-				<span class="city city-start">Vancouver Intern.</span> 	
+				<span class="city city-departure">Vancouver Intern.</span> 	
 			</div>
 			<span class="date date-departure">15 June, Wed</span>
 		</div>
@@ -623,11 +682,11 @@
 	</filter>
 	<image x="0" y="0" width="26" height="13" filter="url(#filter0)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAANCAQAAAAdkLZmAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAADqSURBVCjPhdEtSwRRGMXx32AQZZHV5vpWBBdcZCYoYjAtLBgUEUyC0W73A/gpxGoSLGKwGAQtazIJRhExrcjqyrUMu6POjuem85z75zmXy2/VHKv5R5HpH35P0DRYDK35UM34dUFwWAwtCM4zfkkQfFktgkYFwUbXVwRB8GikHzLgU9uVkut08u5AhLKK0/67dnW03Dqyr2HCU7or2Cqq2PDavZg9L8bz68GDE8sm/6TDti2aVfKmlf2lHr5pRSxRzm3zrOnOjTPtKCeekUjEElM56b16pEhjXXwufQjsFEM9DZkXq+q4dPENrJhAIwEI8hQAAAAldEVYdGRhdGU6Y3JlYXRlADIwMTctMDgtMDJUMTA6MDk6NDgrMDA6MDBHHtNIAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE3LTA4LTAyVDEwOjA5OjQ4KzAwOjAwNkNr9AAAAABJRU5ErkJggg==" />
 </svg>
-				<span class="city city-start">Edinburgh</span> 	
+				<span class="city city-arrival">Edinburgh</span> 	
 			</div>
 			<span class="date date-arrival">15 June, Wed</span>
 		</div>
-												
+		
 		<div class="time-waiting__wrap time-short">
 			<strong class="text-brown">Transfer</strong>
 			<div class="middle-wrap">
@@ -669,14 +728,18 @@
 <g>
 </g>
 </svg>
-				<span class="time-waiting__info">Wait</span>
+				<span class="time-waiting__info">Long wait</span>
 			</div>
 			<span class="time-waiting">1h 20m</span>
 		</div>
 	</div>
 
 </div>
-										<div class="flights-info__wrap flights-info__wrap-separator">
+				<!-- End -->
+										
+										
+				<!-- Flight-return-more-end -->
+				<div class="flights-info__wrap flights-info__wrap-separator">
 
 	<div class="flights-info__top">
 		<span class="flights-info__top__airline"><img class="airline-logo" src="img/airline-logo-2.png" alt="airline-logo"> Lufthansa Airline</span>
@@ -696,7 +759,7 @@
 	</filter>
 	<image x="0" y="0" width="26" height="11" filter="url(#filter0)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAALCAQAAADLyVV7AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAADcSURBVCjPldIhS0NRGMbx34Vhc0EUtBhsixZRk8EmmPULGFY20LQi+ClcECxaBOOKiGKSga4o4idwTUEuTBCO5V4457oJvm867/P8X57DOcS15cKyf9a1IOhZHavWNd141EnHDSNBENzaTJQVJ/JC61e3tQohCO5ty0zbM4imubUqlBURy37xGZ2+nGuMS77oI8HKfrVvtjQd65pLsMOKfeTMhiy2HAjetdQwZcddAjxpm/kdJ3MleLbryDC58Kn1ya+zoO3SdwQMNNUnAzW86ckNLZlHX9fD33/gB9B1avH0tviKAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE3LTA4LTAyVDEwOjA5OjM0KzAwOjAwinuwJQAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxNy0wOC0wMlQxMDowOTozNCswMDowMPsmCJkAAAAASUVORK5CYII=" />
 </svg>	
-				<span class="city city-start">Edinburgh</span> 	
+				<span class="city city-departure">Edinburgh</span> 	
 			</div>
 			<span class="date date-departure">15 June, Wed</span>
 		</div>
@@ -714,47 +777,95 @@
 	</filter>
 	<image x="0" y="0" width="26" height="13" filter="url(#filter0)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAANCAQAAAAdkLZmAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAADqSURBVCjPhdEtSwRRGMXx32AQZZHV5vpWBBdcZCYoYjAtLBgUEUyC0W73A/gpxGoSLGKwGAQtazIJRhExrcjqyrUMu6POjuem85z75zmXy2/VHKv5R5HpH35P0DRYDK35UM34dUFwWAwtCM4zfkkQfFktgkYFwUbXVwRB8GikHzLgU9uVkut08u5AhLKK0/67dnW03Dqyr2HCU7or2Cqq2PDavZg9L8bz68GDE8sm/6TDti2aVfKmlf2lHr5pRSxRzm3zrOnOjTPtKCeekUjEElM56b16pEhjXXwufQjsFEM9DZkXq+q4dPENrJhAIwEI8hQAAAAldEVYdGRhdGU6Y3JlYXRlADIwMTctMDgtMDJUMTA6MDk6NDgrMDA6MDBHHtNIAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE3LTA4LTAyVDEwOjA5OjQ4KzAwOjAwNkNr9AAAAABJRU5ErkJggg==" />
 </svg>
-				<span class="city city-start">London Gatwick</span> 	
+				<span class="city city-arrival">London Gatwick</span> 	
 			</div>
 			<span class="date date-arrival">15 June, Wed</span>
+		</div>
+		
+		<div class="time-waiting__wrap @@trasfer-waiting">
+			<strong class="text-brown">Transfer</strong>
+			<div class="middle-wrap">
+				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 438.533 438.533" style="enable-background:new 0 0 438.533 438.533;" xml:space="preserve">
+<g>
+	<g>
+		<path d="M409.133,109.203c-19.608-33.592-46.205-60.189-79.798-79.796C295.736,9.801,259.058,0,219.273,0    c-39.781,0-76.47,9.801-110.063,29.407c-33.595,19.604-60.192,46.201-79.8,79.796C9.801,142.8,0,179.489,0,219.267    c0,39.78,9.804,76.463,29.407,110.062c19.607,33.592,46.204,60.189,79.799,79.798c33.597,19.605,70.283,29.407,110.063,29.407    s76.47-9.802,110.065-29.407c33.593-19.602,60.189-46.206,79.795-79.798c19.603-33.596,29.403-70.284,29.403-110.062    C438.533,179.485,428.732,142.795,409.133,109.203z M353.742,297.208c-13.894,23.791-32.736,42.64-56.527,56.534    c-23.791,13.894-49.771,20.834-77.945,20.834c-28.167,0-54.149-6.94-77.943-20.834c-23.791-13.895-42.633-32.743-56.527-56.534    c-13.897-23.791-20.843-49.772-20.843-77.941c0-28.171,6.949-54.152,20.843-77.943c13.891-23.791,32.738-42.637,56.527-56.53    c23.791-13.895,49.772-20.84,77.943-20.84c28.173,0,54.154,6.945,77.945,20.84c23.791,13.894,42.634,32.739,56.527,56.53    c13.895,23.791,20.838,49.772,20.838,77.943C374.58,247.436,367.637,273.417,353.742,297.208z" fill="#424242"/>
+		<path d="M246.68,109.631h-18.274c-2.669,0-4.853,0.859-6.57,2.57c-1.706,1.713-2.565,3.9-2.565,6.565v100.5h-63.953    c-2.667,0-4.853,0.855-6.567,2.564c-1.712,1.712-2.568,3.901-2.568,6.571v18.271c0,2.666,0.856,4.856,2.568,6.567    c1.715,1.711,3.905,2.566,6.567,2.566h91.367c2.662,0,4.853-0.855,6.561-2.566c1.711-1.711,2.573-3.901,2.573-6.567V118.766    c0-2.663-0.862-4.849-2.573-6.565C251.536,110.49,249.346,109.631,246.68,109.631z" fill="#424242"/>
+	</g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+				<span class="time-waiting__info">Long wait</span>
+			</div>
+			<span class="time-waiting">@@time-waiting</span>
 		</div>
 	</div>
 
 </div>
-									</div>
+				<!-- End -->
+			</div>
 									
-									<div class="col-md-2">
-										<div class="sidebar">
+			<div class="col-md-2">
+				<!-- Flight-info-sidebar-more -->
+				<div class="sidebar">
 	<span class='total-price-text'>Total price</span>
 	<span class="total-price">€183</span>
 </div>
-									</div>
+				<!-- End -->
+			</div>
 									
-								</div>
-							</div>
-							
-						</section>
-   					
-    					
+		</div>
+								
+	</div>
+</section>
     					
     					<!-- Flights-section -->
-    					<section class="flights-info">
+						<section class="flights-info">
     					
-							<div class="section__content">
-								<div class="row">
+	<div class="section__content">
+		<div class="row">
 
-									<div class="col-md-5">
-										<div class="flights-info__wrap">
+			<div class="col-md-5">
+				<!-- Flight-outbound-default -->
+				<div class="flights-info__wrap @@flights-info-type">
 
 	<div class="flights-info__top">
-		<span>Outbound</span>
-		<span class="flights-info__top__airline">JetBlue Airways <img class="airline-logo" src="img/airline-logo-1.png" alt="airline-logo"></span>
+		<span class="flights-direction">Outbound</span>
+		<span class="flights-info__top__airline">Jetblue Airways <img class="airline-logo" src="img/airline-logo-1.png" alt="airline-logo"></span>
 	</div>
 
 	<div class="flights-info__body">
 		<div class="flights-info__body__departure align-self-end">
 			<h4 class="time time-departure">16:10</h4>
-			<span class="city city-start">London</span> 	
+			<span class="city city-departure">London</span> 	
 		</div>
 												
 		<div class="flights-info__body__route">
@@ -783,9 +894,9 @@
 			</div>
 
 			<ul class="route__timeline list-unstyled">
-				<li class="route__timeline__item" data-toggle="tooltip" data-placement="right" title="Departure from LGW airport at 16:10">&nbsp;</li>	
-				<li class="route__timeline__item route__timeline__item-sm" data-toggle="tooltip" data-placement="top" title="Arrival in the airport Vancouver Intern. at 20:10. Wait time: 9 h 5 min. Local time.">&nbsp;</li>			
-				<li class="route__timeline__item" data-toggle="tooltip" data-placement="left" title="Arrival to JFK airport at 10:50">&nbsp;</li>		
+				<li class="route__timeline__item" data-toggle="tooltip" data-placement="right" title="Departure from London Gatwick airport at 16:10. Local time.">&nbsp;</li>	
+				 <li class="route__timeline__item route__timeline__item-sm" data-toggle="tooltip" data-placement="left" title="Arrival in the airport Vancouver Intern. at 20:10. Wait time: 9 h 5 min. Local time.">&nbsp;</li>				 
+				<li class="route__timeline__item" data-toggle="tooltip" data-placement="left" title="Arrival to John F. Kennedy airport at 10:50. Local time.">&nbsp;</li>		
 			</ul>	
 
 			<div class="route__airport">
@@ -796,25 +907,27 @@
 
 		<div class="flights-info__body__arrival align-self-end text-right">
 			<h5 class="time time-arrival time-up-sup">10:50</h5>
-			<span class="city city-end">New York</span>		
+			<span class="city city-arrival">New York</span>		
 		</div>
 	</div>
 
 </div>
-									</div>
+				<!-- End -->
+			</div>
 																			
-									<div class="col-md-5">
-										<div class="flights-info__wrap flights-info__wrap-separator">
+			<div class="col-md-5">
+				<!-- Flight-return-default -->
+				<div class="flights-info__wrap flights-info__wrap-separator">
 
 	<div class="flights-info__top">
-		<span>Return</span>
+		<span class="flights-direction">Return</span>
 		<span class="flights-info__top__airline">Lufthansa Airline <img class="airline-logo" src="img/airline-logo-2.png" alt="airline-logo"></span>
 	</div>
 
 	<div class="flights-info__body">
 		<div class="flights-info__body__departure align-self-end">
-			<h5 class="time time-departure">6:40</h5>
-			<span class="city city-start">New York</span> 	
+			<h4 class="time time-departure">06:40</h4>
+			<span class="city city-departure">New York</span> 	
 		</div>
 												
 		<div class="flights-info__body__route">
@@ -843,10 +956,10 @@
 			</div>
 
 			<ul class="route__timeline list-unstyled">
-				<li class="route__timeline__item" data-toggle="tooltip" data-placement="right" title="Departure from LGW airport at 06:40">&nbsp;</li>	
-				<li class="route__timeline__item route__timeline__item-sm" data-toggle="tooltip" data-placement="top" title="Arrival in the airport Vancouver Intern. at 10:25. Wait time: 45 min. Local time.">&nbsp;</li>		
-				<li class="route__timeline__item route__timeline__item-sm" data-toggle="tooltip" data-placement="top" title="Arrival in the airport Edinburgh at 13:30. Wait time: 1 h 20 min. Local time.">&nbsp;</li>	
-				<li class="route__timeline__item" data-toggle="tooltip" data-placement="left" title="Arrival to JFK airport at 17:20">&nbsp;</li>		
+				<li class="route__timeline__item" data-toggle="tooltip" data-placement="right" title="Departure from London Gatwick airport at 16:10. Local time.">&nbsp;</li>	
+				 <li class="route__timeline__item route__timeline__item-sm" data-toggle="tooltip" data-placement="left" title="Arrival in the airport Vancouver Intern. at 10:25. Wait time: 0 h 45 min. Local time.">&nbsp;</li>				
+<li class="route__timeline__item route__timeline__item-sm" data-toggle="tooltip" data-placement="left" title="Arrival in the airport Edinburgh at 13:30. Wait time: 1 h 20 min. Local time.">&nbsp;</li>				 
+				<li class="route__timeline__item" data-toggle="tooltip" data-placement="left" title="Arrival to John F. Kennedy airport at 10:50. Local time.">&nbsp;</li>		
 			</ul>	
 
 			<div class="route__airport">
@@ -856,45 +969,48 @@
 		</div>
 
 		<div class="flights-info__body__arrival align-self-end text-right">
-			<h5 class="time time-arrival">17:20</h5>
-			<span class="city city-end">London</span>		
+			<h5 class="time time-arrival @@time-sup">17:20</h5>
+			<span class="city city-arrival">London</span>		
 		</div>
 	</div>
 
 </div>
-									</div>
+				<!-- End -->
+			</div>
 										
-									<div class="col-md-2">
-										<div class="sidebar">
+			<div class="col-md-2">
+				<!-- Flight-info-sidebar -->
+				<div class="sidebar">
 	<!-- Sidebar-main -->
-	 <div class="sidebar__main">
-	<h4 class="sidebar__main_title month-cost">
-		€30,50
-		<span class="text-muted">per month</span>
-	</h4>
-												
-	<a href="" class="btn btn-select">Select</a>
-	<a href="" class="btn btn-sm-100 js-btn-more text-darkgrey text-underline">View details</a>
-</div> 
-</div>
-									</div>
-										
-								</div>
-							</div>
-							
-							<div class="section__content__more">
-								
-								<div class="row">
+	<div class="sidebar__main">
+		<h4 class="sidebar__main_title month-cost">
+			€30,50
+			<span class="text-muted">per month</span>
+		</h4>
 
-									<div class="col-md-5">
-										<div class="flights-info__wrap flights-transfer">
+		<a href="" class="btn btn-select">Select</a>
+		<a href="" class="btn btn-sm-100 js-btn-more text-darkgrey text-underline">View details</a>
+	</div> 
+</div>
+				<!-- End -->
+			</div>
+										
+		</div>
+	</div>
+							
+	<div class="section__content__more">
+								
+		<div class="row">
+
+			<div class="col-md-5">
+				<!-- Flight-outbound-more-transfer -->
+				<div class="flights-info__wrap flights-transfer">
 
 	<div class="flights-info__top">
-		<span class="flights-info__top__airline"><img class="airline-logo" src="img/airline-logo-1.png" alt="airline-logo"> JetBlue Airways</span>
+		<span class="flights-info__top__airline"><img class="airline-logo" src="img/airline-logo-1.png" alt="airline-logo"> Jetblue Airways</span>
 	</div>
 
-	<div class="flights-info__body">
-											
+	<div class="flights-info__body">								
 		<div class="flights-info__body__departure">
 			<span class="time time-departure">16:10</span>
 			<div class="airport-departure middle-wrap">
@@ -908,7 +1024,7 @@
 	</filter>
 	<image x="0" y="0" width="26" height="11" filter="url(#filter0)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAALCAQAAADLyVV7AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAADcSURBVCjPldIhS0NRGMbx34Vhc0EUtBhsixZRk8EmmPULGFY20LQi+ClcECxaBOOKiGKSga4o4idwTUEuTBCO5V4457oJvm867/P8X57DOcS15cKyf9a1IOhZHavWNd141EnHDSNBENzaTJQVJ/JC61e3tQohCO5ty0zbM4imubUqlBURy37xGZ2+nGuMS77oI8HKfrVvtjQd65pLsMOKfeTMhiy2HAjetdQwZcddAjxpm/kdJ3MleLbryDC58Kn1ya+zoO3SdwQMNNUnAzW86ckNLZlHX9fD33/gB9B1avH0tviKAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE3LTA4LTAyVDEwOjA5OjM0KzAwOjAwinuwJQAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxNy0wOC0wMlQxMDowOTozNCswMDowMPsmCJkAAAAASUVORK5CYII=" />
 </svg>	
-				<span class="city city-start">London Gatwick</span> 	
+				<span class="city city-departure">London Gatwick</span> 	
 			</div>
 			<span class="date date-departure">12 June, Sun</span>
 		</div>
@@ -926,11 +1042,11 @@
 	</filter>
 	<image x="0" y="0" width="26" height="13" filter="url(#filter0)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAANCAQAAAAdkLZmAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAADqSURBVCjPhdEtSwRRGMXx32AQZZHV5vpWBBdcZCYoYjAtLBgUEUyC0W73A/gpxGoSLGKwGAQtazIJRhExrcjqyrUMu6POjuem85z75zmXy2/VHKv5R5HpH35P0DRYDK35UM34dUFwWAwtCM4zfkkQfFktgkYFwUbXVwRB8GikHzLgU9uVkut08u5AhLKK0/67dnW03Dqyr2HCU7or2Cqq2PDavZg9L8bz68GDE8sm/6TDti2aVfKmlf2lHr5pRSxRzm3zrOnOjTPtKCeekUjEElM56b16pEhjXXwufQjsFEM9DZkXq+q4dPENrJhAIwEI8hQAAAAldEVYdGRhdGU6Y3JlYXRlADIwMTctMDgtMDJUMTA6MDk6NDgrMDA6MDBHHtNIAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE3LTA4LTAyVDEwOjA5OjQ4KzAwOjAwNkNr9AAAAABJRU5ErkJggg==" />
 </svg>
-				<span class="city city-start">Vancouver Intern.</span> 	
+				<span class="city city-arrival">Vancouver Intern.</span> 	
 			</div>
 			<span class="date date-arrival">12 June, Sun</span>
 		</div>
-												
+		
 		<div class="time-waiting__wrap time-long">
 			<strong class="text-brown">Transfer</strong>
 			<div class="middle-wrap">
@@ -979,10 +1095,14 @@
 	</div>
 
 </div>
-										<div class="flights-info__wrap">
+				<!-- End -->
+
+									
+				<!-- Flight-outbound-more-end -->
+				<div class="flights-info__wrap @@flights-info-type">
 
 	<div class="flights-info__top">
-		<span class="flights-info__top__airline"><img class="airline-logo" src="img/airline-logo-1.png" alt="airline-logo"> JetBlue Airways</span>
+		<span class="flights-info__top__airline"><img class="airline-logo" src="img/airline-logo-1.png" alt="airline-logo"> Jetblue Airways</span>
 	</div>
 
 	<div class="flights-info__body">								
@@ -999,7 +1119,7 @@
 	</filter>
 	<image x="0" y="0" width="26" height="11" filter="url(#filter0)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAALCAQAAADLyVV7AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAADcSURBVCjPldIhS0NRGMbx34Vhc0EUtBhsixZRk8EmmPULGFY20LQi+ClcECxaBOOKiGKSga4o4idwTUEuTBCO5V4457oJvm867/P8X57DOcS15cKyf9a1IOhZHavWNd141EnHDSNBENzaTJQVJ/JC61e3tQohCO5ty0zbM4imubUqlBURy37xGZ2+nGuMS77oI8HKfrVvtjQd65pLsMOKfeTMhiy2HAjetdQwZcddAjxpm/kdJ3MleLbryDC58Kn1ya+zoO3SdwQMNNUnAzW86ckNLZlHX9fD33/gB9B1avH0tviKAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE3LTA4LTAyVDEwOjA5OjM0KzAwOjAwinuwJQAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxNy0wOC0wMlQxMDowOTozNCswMDowMPsmCJkAAAAASUVORK5CYII=" />
 </svg>	
-				<span class="city city-start">Vancouver Intern.</span> 	
+				<span class="city city-departure">Vancouver Intern.</span> 	
 			</div>
 			<span class="date date-departure">13 June, Sat</span>
 		</div>
@@ -1017,24 +1137,71 @@
 	</filter>
 	<image x="0" y="0" width="26" height="13" filter="url(#filter0)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAANCAQAAAAdkLZmAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAADqSURBVCjPhdEtSwRRGMXx32AQZZHV5vpWBBdcZCYoYjAtLBgUEUyC0W73A/gpxGoSLGKwGAQtazIJRhExrcjqyrUMu6POjuem85z75zmXy2/VHKv5R5HpH35P0DRYDK35UM34dUFwWAwtCM4zfkkQfFktgkYFwUbXVwRB8GikHzLgU9uVkut08u5AhLKK0/67dnW03Dqyr2HCU7or2Cqq2PDavZg9L8bz68GDE8sm/6TDti2aVfKmlf2lHr5pRSxRzm3zrOnOjTPtKCeekUjEElM56b16pEhjXXwufQjsFEM9DZkXq+q4dPENrJhAIwEI8hQAAAAldEVYdGRhdGU6Y3JlYXRlADIwMTctMDgtMDJUMTA6MDk6NDgrMDA6MDBHHtNIAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE3LTA4LTAyVDEwOjA5OjQ4KzAwOjAwNkNr9AAAAABJRU5ErkJggg==" />
 </svg>
-				<span class="city city-start">John F. Kennedy</span> 	
+				<span class="city city-arrival">John F. Kennedy</span> 	
 			</div>
 			<span class="date date-arrival">13 June, Sat</span>
+		</div>
+		
+		<div class="time-waiting__wrap @@trasfer-waiting">
+			<strong class="text-brown">Transfer</strong>
+			<div class="middle-wrap">
+				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 438.533 438.533" style="enable-background:new 0 0 438.533 438.533;" xml:space="preserve">
+<g>
+	<g>
+		<path d="M409.133,109.203c-19.608-33.592-46.205-60.189-79.798-79.796C295.736,9.801,259.058,0,219.273,0    c-39.781,0-76.47,9.801-110.063,29.407c-33.595,19.604-60.192,46.201-79.8,79.796C9.801,142.8,0,179.489,0,219.267    c0,39.78,9.804,76.463,29.407,110.062c19.607,33.592,46.204,60.189,79.799,79.798c33.597,19.605,70.283,29.407,110.063,29.407    s76.47-9.802,110.065-29.407c33.593-19.602,60.189-46.206,79.795-79.798c19.603-33.596,29.403-70.284,29.403-110.062    C438.533,179.485,428.732,142.795,409.133,109.203z M353.742,297.208c-13.894,23.791-32.736,42.64-56.527,56.534    c-23.791,13.894-49.771,20.834-77.945,20.834c-28.167,0-54.149-6.94-77.943-20.834c-23.791-13.895-42.633-32.743-56.527-56.534    c-13.897-23.791-20.843-49.772-20.843-77.941c0-28.171,6.949-54.152,20.843-77.943c13.891-23.791,32.738-42.637,56.527-56.53    c23.791-13.895,49.772-20.84,77.943-20.84c28.173,0,54.154,6.945,77.945,20.84c23.791,13.894,42.634,32.739,56.527,56.53    c13.895,23.791,20.838,49.772,20.838,77.943C374.58,247.436,367.637,273.417,353.742,297.208z" fill="#424242"/>
+		<path d="M246.68,109.631h-18.274c-2.669,0-4.853,0.859-6.57,2.57c-1.706,1.713-2.565,3.9-2.565,6.565v100.5h-63.953    c-2.667,0-4.853,0.855-6.567,2.564c-1.712,1.712-2.568,3.901-2.568,6.571v18.271c0,2.666,0.856,4.856,2.568,6.567    c1.715,1.711,3.905,2.566,6.567,2.566h91.367c2.662,0,4.853-0.855,6.561-2.566c1.711-1.711,2.573-3.901,2.573-6.567V118.766    c0-2.663-0.862-4.849-2.573-6.565C251.536,110.49,249.346,109.631,246.68,109.631z" fill="#424242"/>
+	</g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+				<span class="time-waiting__info">Long wait</span>
+			</div>
+			<span class="time-waiting">@@time-waiting</span>
 		</div>
 	</div>
 
 </div>
-									</div>
+				<!-- End -->
+			</div>
 									
-									<div class="col-md-5">
-										<div class="flights-info__wrap flights-info__wrap-separator flights-transfer">
+			<div class="col-md-5">
+				<!-- Flight-return-more-transfer -->
+				<div class="flights-info__wrap flights-info__wrap-separator flights-transfer">
 
 	<div class="flights-info__top">
 		<span class="flights-info__top__airline"><img class="airline-logo" src="img/airline-logo-2.png" alt="airline-logo"> Lufthansa Airline</span>
 	</div>
 
-	<div class="flights-info__body">
-											
+	<div class="flights-info__body">								
 		<div class="flights-info__body__departure">
 			<span class="time time-departure">06:40</span>
 			<div class="airport-departure middle-wrap">
@@ -1048,7 +1215,7 @@
 	</filter>
 	<image x="0" y="0" width="26" height="11" filter="url(#filter0)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAALCAQAAADLyVV7AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAADcSURBVCjPldIhS0NRGMbx34Vhc0EUtBhsixZRk8EmmPULGFY20LQi+ClcECxaBOOKiGKSga4o4idwTUEuTBCO5V4457oJvm867/P8X57DOcS15cKyf9a1IOhZHavWNd141EnHDSNBENzaTJQVJ/JC61e3tQohCO5ty0zbM4imubUqlBURy37xGZ2+nGuMS77oI8HKfrVvtjQd65pLsMOKfeTMhiy2HAjetdQwZcddAjxpm/kdJ3MleLbryDC58Kn1ya+zoO3SdwQMNNUnAzW86ckNLZlHX9fD33/gB9B1avH0tviKAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE3LTA4LTAyVDEwOjA5OjM0KzAwOjAwinuwJQAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxNy0wOC0wMlQxMDowOTozNCswMDowMPsmCJkAAAAASUVORK5CYII=" />
 </svg>	
-				<span class="city city-start">John F. Kennedy</span> 	
+				<span class="city city-departure">John F. Kennedy</span> 	
 			</div>
 			<span class="date date-departure">15 June, Wed</span>
 		</div>
@@ -1066,11 +1233,11 @@
 	</filter>
 	<image x="0" y="0" width="26" height="13" filter="url(#filter0)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAANCAQAAAAdkLZmAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAADqSURBVCjPhdEtSwRRGMXx32AQZZHV5vpWBBdcZCYoYjAtLBgUEUyC0W73A/gpxGoSLGKwGAQtazIJRhExrcjqyrUMu6POjuem85z75zmXy2/VHKv5R5HpH35P0DRYDK35UM34dUFwWAwtCM4zfkkQfFktgkYFwUbXVwRB8GikHzLgU9uVkut08u5AhLKK0/67dnW03Dqyr2HCU7or2Cqq2PDavZg9L8bz68GDE8sm/6TDti2aVfKmlf2lHr5pRSxRzm3zrOnOjTPtKCeekUjEElM56b16pEhjXXwufQjsFEM9DZkXq+q4dPENrJhAIwEI8hQAAAAldEVYdGRhdGU6Y3JlYXRlADIwMTctMDgtMDJUMTA6MDk6NDgrMDA6MDBHHtNIAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE3LTA4LTAyVDEwOjA5OjQ4KzAwOjAwNkNr9AAAAABJRU5ErkJggg==" />
 </svg>
-				<span class="city city-start">Vancouver Intern.</span> 	
+				<span class="city city-arrival">Vancouver Intern.</span> 	
 			</div>
 			<span class="date date-arrival">15 June, Wed</span>
 		</div>
-												
+		
 		<div class="time-waiting__wrap time-short">
 			<strong class="text-brown">Transfer</strong>
 			<div class="middle-wrap">
@@ -1112,21 +1279,24 @@
 <g>
 </g>
 </svg>
-				<span class="time-waiting__info">Wait</span>
+				<span class="time-waiting__info">Long wait</span>
 			</div>
 			<span class="time-waiting">0h 45m</span>
 		</div>
 	</div>
 
 </div>
-										<div class="flights-info__wrap flights-info__wrap-separator flights-transfer">
+				<!-- End -->
+										
+										
+				<!-- Flight-return-more-transfer -->
+				<div class="flights-info__wrap flights-info__wrap-separator flights-transfer">
 
 	<div class="flights-info__top">
 		<span class="flights-info__top__airline"><img class="airline-logo" src="img/airline-logo-2.png" alt="airline-logo"> Lufthansa Airline</span>
 	</div>
 
-	<div class="flights-info__body">
-											
+	<div class="flights-info__body">								
 		<div class="flights-info__body__departure">
 			<span class="time time-departure">11:10</span>
 			<div class="airport-departure middle-wrap">
@@ -1140,7 +1310,7 @@
 	</filter>
 	<image x="0" y="0" width="26" height="11" filter="url(#filter0)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAALCAQAAADLyVV7AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAADcSURBVCjPldIhS0NRGMbx34Vhc0EUtBhsixZRk8EmmPULGFY20LQi+ClcECxaBOOKiGKSga4o4idwTUEuTBCO5V4457oJvm867/P8X57DOcS15cKyf9a1IOhZHavWNd141EnHDSNBENzaTJQVJ/JC61e3tQohCO5ty0zbM4imubUqlBURy37xGZ2+nGuMS77oI8HKfrVvtjQd65pLsMOKfeTMhiy2HAjetdQwZcddAjxpm/kdJ3MleLbryDC58Kn1ya+zoO3SdwQMNNUnAzW86ckNLZlHX9fD33/gB9B1avH0tviKAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE3LTA4LTAyVDEwOjA5OjM0KzAwOjAwinuwJQAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxNy0wOC0wMlQxMDowOTozNCswMDowMPsmCJkAAAAASUVORK5CYII=" />
 </svg>	
-				<span class="city city-start">Vancouver Intern.</span> 	
+				<span class="city city-departure">Vancouver Intern.</span> 	
 			</div>
 			<span class="date date-departure">15 June, Wed</span>
 		</div>
@@ -1158,11 +1328,11 @@
 	</filter>
 	<image x="0" y="0" width="26" height="13" filter="url(#filter0)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAANCAQAAAAdkLZmAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAADqSURBVCjPhdEtSwRRGMXx32AQZZHV5vpWBBdcZCYoYjAtLBgUEUyC0W73A/gpxGoSLGKwGAQtazIJRhExrcjqyrUMu6POjuem85z75zmXy2/VHKv5R5HpH35P0DRYDK35UM34dUFwWAwtCM4zfkkQfFktgkYFwUbXVwRB8GikHzLgU9uVkut08u5AhLKK0/67dnW03Dqyr2HCU7or2Cqq2PDavZg9L8bz68GDE8sm/6TDti2aVfKmlf2lHr5pRSxRzm3zrOnOjTPtKCeekUjEElM56b16pEhjXXwufQjsFEM9DZkXq+q4dPENrJhAIwEI8hQAAAAldEVYdGRhdGU6Y3JlYXRlADIwMTctMDgtMDJUMTA6MDk6NDgrMDA6MDBHHtNIAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE3LTA4LTAyVDEwOjA5OjQ4KzAwOjAwNkNr9AAAAABJRU5ErkJggg==" />
 </svg>
-				<span class="city city-start">Edinburgh</span> 	
+				<span class="city city-arrival">Edinburgh</span> 	
 			</div>
 			<span class="date date-arrival">15 June, Wed</span>
 		</div>
-												
+		
 		<div class="time-waiting__wrap time-short">
 			<strong class="text-brown">Transfer</strong>
 			<div class="middle-wrap">
@@ -1204,14 +1374,18 @@
 <g>
 </g>
 </svg>
-				<span class="time-waiting__info">Wait</span>
+				<span class="time-waiting__info">Long wait</span>
 			</div>
 			<span class="time-waiting">1h 20m</span>
 		</div>
 	</div>
 
 </div>
-										<div class="flights-info__wrap flights-info__wrap-separator">
+				<!-- End -->
+										
+										
+				<!-- Flight-return-more-end -->
+				<div class="flights-info__wrap flights-info__wrap-separator">
 
 	<div class="flights-info__top">
 		<span class="flights-info__top__airline"><img class="airline-logo" src="img/airline-logo-2.png" alt="airline-logo"> Lufthansa Airline</span>
@@ -1231,7 +1405,7 @@
 	</filter>
 	<image x="0" y="0" width="26" height="11" filter="url(#filter0)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAALCAQAAADLyVV7AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAADcSURBVCjPldIhS0NRGMbx34Vhc0EUtBhsixZRk8EmmPULGFY20LQi+ClcECxaBOOKiGKSga4o4idwTUEuTBCO5V4457oJvm867/P8X57DOcS15cKyf9a1IOhZHavWNd141EnHDSNBENzaTJQVJ/JC61e3tQohCO5ty0zbM4imubUqlBURy37xGZ2+nGuMS77oI8HKfrVvtjQd65pLsMOKfeTMhiy2HAjetdQwZcddAjxpm/kdJ3MleLbryDC58Kn1ya+zoO3SdwQMNNUnAzW86ckNLZlHX9fD33/gB9B1avH0tviKAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE3LTA4LTAyVDEwOjA5OjM0KzAwOjAwinuwJQAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxNy0wOC0wMlQxMDowOTozNCswMDowMPsmCJkAAAAASUVORK5CYII=" />
 </svg>	
-				<span class="city city-start">Edinburgh</span> 	
+				<span class="city city-departure">Edinburgh</span> 	
 			</div>
 			<span class="date date-departure">15 June, Wed</span>
 		</div>
@@ -1249,27 +1423,75 @@
 	</filter>
 	<image x="0" y="0" width="26" height="13" filter="url(#filter0)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAANCAQAAAAdkLZmAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAADqSURBVCjPhdEtSwRRGMXx32AQZZHV5vpWBBdcZCYoYjAtLBgUEUyC0W73A/gpxGoSLGKwGAQtazIJRhExrcjqyrUMu6POjuem85z75zmXy2/VHKv5R5HpH35P0DRYDK35UM34dUFwWAwtCM4zfkkQfFktgkYFwUbXVwRB8GikHzLgU9uVkut08u5AhLKK0/67dnW03Dqyr2HCU7or2Cqq2PDavZg9L8bz68GDE8sm/6TDti2aVfKmlf2lHr5pRSxRzm3zrOnOjTPtKCeekUjEElM56b16pEhjXXwufQjsFEM9DZkXq+q4dPENrJhAIwEI8hQAAAAldEVYdGRhdGU6Y3JlYXRlADIwMTctMDgtMDJUMTA6MDk6NDgrMDA6MDBHHtNIAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE3LTA4LTAyVDEwOjA5OjQ4KzAwOjAwNkNr9AAAAABJRU5ErkJggg==" />
 </svg>
-				<span class="city city-start">London Gatwick</span> 	
+				<span class="city city-arrival">London Gatwick</span> 	
 			</div>
 			<span class="date date-arrival">15 June, Wed</span>
+		</div>
+		
+		<div class="time-waiting__wrap @@trasfer-waiting">
+			<strong class="text-brown">Transfer</strong>
+			<div class="middle-wrap">
+				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 438.533 438.533" style="enable-background:new 0 0 438.533 438.533;" xml:space="preserve">
+<g>
+	<g>
+		<path d="M409.133,109.203c-19.608-33.592-46.205-60.189-79.798-79.796C295.736,9.801,259.058,0,219.273,0    c-39.781,0-76.47,9.801-110.063,29.407c-33.595,19.604-60.192,46.201-79.8,79.796C9.801,142.8,0,179.489,0,219.267    c0,39.78,9.804,76.463,29.407,110.062c19.607,33.592,46.204,60.189,79.799,79.798c33.597,19.605,70.283,29.407,110.063,29.407    s76.47-9.802,110.065-29.407c33.593-19.602,60.189-46.206,79.795-79.798c19.603-33.596,29.403-70.284,29.403-110.062    C438.533,179.485,428.732,142.795,409.133,109.203z M353.742,297.208c-13.894,23.791-32.736,42.64-56.527,56.534    c-23.791,13.894-49.771,20.834-77.945,20.834c-28.167,0-54.149-6.94-77.943-20.834c-23.791-13.895-42.633-32.743-56.527-56.534    c-13.897-23.791-20.843-49.772-20.843-77.941c0-28.171,6.949-54.152,20.843-77.943c13.891-23.791,32.738-42.637,56.527-56.53    c23.791-13.895,49.772-20.84,77.943-20.84c28.173,0,54.154,6.945,77.945,20.84c23.791,13.894,42.634,32.739,56.527,56.53    c13.895,23.791,20.838,49.772,20.838,77.943C374.58,247.436,367.637,273.417,353.742,297.208z" fill="#424242"/>
+		<path d="M246.68,109.631h-18.274c-2.669,0-4.853,0.859-6.57,2.57c-1.706,1.713-2.565,3.9-2.565,6.565v100.5h-63.953    c-2.667,0-4.853,0.855-6.567,2.564c-1.712,1.712-2.568,3.901-2.568,6.571v18.271c0,2.666,0.856,4.856,2.568,6.567    c1.715,1.711,3.905,2.566,6.567,2.566h91.367c2.662,0,4.853-0.855,6.561-2.566c1.711-1.711,2.573-3.901,2.573-6.567V118.766    c0-2.663-0.862-4.849-2.573-6.565C251.536,110.49,249.346,109.631,246.68,109.631z" fill="#424242"/>
+	</g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+				<span class="time-waiting__info">Long wait</span>
+			</div>
+			<span class="time-waiting">@@time-waiting</span>
 		</div>
 	</div>
 
 </div>
-									</div>
+				<!-- End -->
+			</div>
 									
-									<div class="col-md-2">
-										<div class="sidebar">
+			<div class="col-md-2">
+				<!-- Flight-info-sidebar-more -->
+				<div class="sidebar">
 	<span class='total-price-text'>Total price</span>
 	<span class="total-price">€183</span>
 </div>
-									</div>
+				<!-- End -->
+			</div>
 									
-								</div>
+		</div>
 								
-							</div>
-						</section>
-						
+	</div>
+</section>
 					
 				</div>
 			</div>
@@ -1293,7 +1515,7 @@
     	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
    		<script src='js/popper.min.js'></script>
     	<script src="js/bootstrap.min.js"></script>
-		<script src="js/main.js"></script>
+		<script src="js/main.min.js"></script>
            
     </body>
 </html>

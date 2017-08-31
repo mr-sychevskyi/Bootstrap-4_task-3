@@ -1,0 +1,39 @@
+<div class="flights-info__wrap @@flights-info-type">
+
+	<div class="flights-info__top">
+		<span class="flights-direction">@@flights-direction</span>
+		<span class="flights-info__top__airline">@@flights-airline <img class="airline-logo" src="@@airline-logo" alt="airline-logo"></span>
+	</div>
+
+	<div class="flights-info__body">
+		<div class="flights-info__body__departure align-self-end">
+			<h4 class="time time-departure">@@time.departure</h4>
+			<span class="city city-departure">@@city.departure</span> 	
+		</div>
+												
+		<div class="flights-info__body__route">
+			<div class="route__icons">
+				@@include('../../svg/_air-up.html')
+				<span class="full-time">@@full-time</span>
+				@@include('../../svg/_air-down.html')
+			</div>
+
+			<ul class="route__timeline list-unstyled">
+				<li class="route__timeline__item" data-toggle="tooltip" data-placement="right" title="Departure from London Gatwick airport at 16:10. Local time.">&nbsp;</li>	
+				@@transfers
+				<li class="route__timeline__item" data-toggle="tooltip" data-placement="left" title="Arrival to John F. Kennedy airport at 10:50. Local time.">&nbsp;</li>		
+			</ul>	
+
+			<div class="route__airport">
+				<span class="airport-abbr airport-departure">@@airport.departure</span>
+				<span class="airport-abbr airport-arrival">@@airport.arrival</span>
+			</div>		
+		</div>
+
+		<div class="flights-info__body__arrival align-self-end text-right">
+			<h5 class="time time-arrival @@time-sup">@@time.arrival</h5>
+			<span class="city city-arrival">@@city.arrival</span>		
+		</div>
+	</div>
+
+</div>
