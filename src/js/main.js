@@ -1,22 +1,28 @@
 $(function () {	
 	
+	//SELECT2
+	$('select').select2({});
+	
+	$('select.payback-select').select2({
+		 minimumResultsForSearch: Infinity
+	});
+	
 	// TOOLTIP
  	$('[data-toggle="tooltip"]').tooltip();   
-	
 	
 	// POPOVER
 	$('[data-toggle="popover"]').popover();
 	
 	
-	// ORDER CHANGE
+	// AIRPORT'S SWAP
 	$('.select-swap').on("click", function(e) {
 		e.preventDefault();
-			
-		var cityStart = $('.airport-select__arrival option:selected').html();
-		var cityEnd = $('.airport-select__departure option:selected').html();
-
-		$('.airport-select__arrival option:selected').html(cityEnd);
-		$('.airport-select__departure option:selected').html(cityStart);
+		
+		let cityStartVal = $('select.airport-select__departure').val();
+		let cityEndVal = $('select.airport-select__arrival').val();
+		
+		$('select.airport-select__departure').val(cityEndVal).trigger('change');  
+		$('select.airport-select__arrival').val(cityStartVal).trigger('change');
 	});
 	// END --> ORDER CHANGE	
 	
