@@ -17,30 +17,11 @@ form {
 	input[type="date"]::-webkit-clear-button,
 	input[type="date"]::-webkit-calendar-picker-indicator { display: none; }
 	
-	select {
-		position: relative;
-	
-		width: 100%;
-		padding: 25px 20px;
-			
-		font-weight: 700;
-		color: #616161;
-		border-radius: 3px;
-		
-		border: none;
-		appearance: none;
-		z-index: 10;
-	}
-	
-	.airport-select__departure { background: #fff; }
 	
 	.select-wrapper,
 	.select-wrapper__payback {
     	position: relative;
 		width: 100%;
-		
-		background: #fff;
-		border-radius: 3px;
 	}
 	
 	.select-swap {
@@ -62,28 +43,19 @@ form {
 		&:hover { opacity: .5; }
 	}
 
-	
-	.select-wrapper__payback:after { 	
-		content: '';
-		
-		position: absolute;
-		top: 50%;
-		transform: translateY(-50%);
-		right: 10px;
-		
-		display: inline-block;
-		width: 12px;
-		height: 12px;
+  	.select-wrapper__payback {
+		background: #fff;
+		border-radius: 3px;
+	 
+		.select2-selection__arrow { display: block; }
 
-		background: transparent url('../img/icon-arrow-down.png') no-repeat center;
-		cursor: pointer;
-	}
-	
-	.payback-select {
-		padding-left: 50px;
-		padding-right: 30px;
-		
-		background: transparent url('../img/icon-card.png') no-repeat 12px center;
-	}
+	   .select2-container .select2-selection--single {
+			padding-left: 50px;
+		  	padding-right: 30px;
+
+		  	background: transparent url('../img/icon-card.png') no-repeat 12px center;
+		  	border: none;
+	  }
+  }
 	
 }
