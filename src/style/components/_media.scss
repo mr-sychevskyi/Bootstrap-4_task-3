@@ -1,16 +1,20 @@
+@media only screen and (min-width: 1200px) {
+	.select2-selection__rendered { max-width: 110px; }
+}
+
 @media only screen and (max-width: 1199px) and (min-width: 992px) {
 		
 	.form-wrap {
 		
+		.select2-selection--single { padding: 20px 8px; }
+		
+		.select2-selection__rendered {
+			font-size: .8rem;
+			line-height: 28px; 
+			max-width: 75px;
+		}
+	
 		input[type="date"] { font-size: .8rem; }
-		select { 
-			padding-left: 10px;
-			font-size: .8rem; 
-		}
-		select.payback-select {
-			padding-left: 45px;
-			font-size: .8rem; 
-		}
 				
 		.btn-search { padding: 1.4rem 2rem; }
 	}
@@ -155,6 +159,7 @@
 		.col:last-of-type { margin-bottom: 0; }
 		.col:nth-last-of-type(2) { margin-bottom: 0; }
 		
+		select { width: 100%; } 
 		.btn-search { width: 100%; }
 	}
 	
@@ -236,6 +241,8 @@
 @media only screen and (max-width: 576px) {	
 	
 	.form-wrap {
+//		.select2-container { width: 100%; } 
+//		.select2-container-default { width: 100%; } 
 		.col { flex-basis: 100%; }
 		.col:nth-last-of-type(2) { margin-bottom: 10px; }	
 	} 
